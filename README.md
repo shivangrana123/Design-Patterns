@@ -1,3 +1,4 @@
+
 # 🎯 Design Patterns in C#
 
 Hey there 👋
@@ -64,3 +65,87 @@ You’ll find well-structured implementations, bite-sized theory, and real-world
 
 ## 🧭 Folder Structure
 
+```
+
+DesignPatternsInCSharp/
+├── Behavioral/
+│   ├── Strategy/
+│   ├── Command/
+│   ├── NullObject/
+│   ├── Specification/
+│   ├── State/
+│   ├── DataAccess/
+│   ├── Mediator/
+│   ├── ChainOfResponsibility/
+│   ├── TemplateMethod/
+│   ├── Visitor/
+│   ├── Memento/
+│   └── RulesEngine/
+│
+├── Creational/
+│   ├── Singleton/
+│   ├── Builder/
+│   ├── Prototype/
+│   ├── Factory/
+│   └── AbstractFactory/
+│
+├── Structural/
+│   ├── Facade/
+│   ├── Decorator/
+│   ├── Composite/
+│   ├── Adapter/
+│   ├── Flyweight/
+│   ├── Proxy/
+│   └── Bridge/
+│
+└── README.md
+
+````
+
+---
+
+## ✍️ How to Use This Repo
+
+1. Clone it:
+   ```bash
+   git clone https://github.com/yourusername/DesignPatternsInCSharp.git
+   cd DesignPatternsInCSharp
+````
+
+2. Browse by pattern category
+3. Read the short explanation + code comments
+4. Run the code to understand how it works in practice
+5. Use it in your own projects 🚀
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+You can:
+
+* Add missing patterns
+* Improve examples or docs
+* Share use-cases or real-world adaptations
+* Help build a solid knowledge base for others
+
+---
+
+## 🙋‍♂️ About Me
+
+Hi, I'm **Shivang Rana** — a .NET full-stack dev who enjoys writing clean code and sharing what I learn.
+
+* 🔗 [LinkedIn](https://www.linkedin.com/in/your-profile/)
+* 📺 [YouTube - devXplorer](https://www.youtube.com/@devXplorer)
+* 🌐 [FullstackFresher.com](https://fullstackfresher.com)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Thanks for visiting!
+If this helped you, give it a ⭐ and share it with fellow devs. Let’s grow together 🙌
