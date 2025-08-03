@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/StrategyPatternForOrders/.vs/StrategyPatternForOrders
+/StrategyPatternForOrders/bin/Debug/net8.0
+/StrategyPatternForOrders/obj
