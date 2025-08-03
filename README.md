@@ -110,7 +110,7 @@ DesignPatternsInCSharp/
    ```bash
    git clone https://github.com/yourusername/DesignPatternsInCSharp.git
    cd DesignPatternsInCSharp
-````
+   ````
 
 2. Browse by pattern category
 3. Read the short explanation + code comments
@@ -135,7 +135,7 @@ You can:
 
 Hi, I'm **Shivang Rana** — a .NET full-stack dev who enjoys writing clean code and sharing what I learn.
 
-* 🔗 [LinkedIn](https://www.linkedin.com/in/your-profile/)
+* 🔗 [LinkedIn]([https://www.linkedin.com/in/your-profile/](https://www.linkedin.com/in/shivangrana123/))
 * 📺 [YouTube - devXplorer](https://www.youtube.com/@devXplorer)
 * 🌐 [FullstackFresher.com](https://fullstackfresher.com)
 
