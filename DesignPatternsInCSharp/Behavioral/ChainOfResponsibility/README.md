@@ -1,17 +1,38 @@
 # ChainOfResponsibility Pattern
 
-## Intent
-Pass a request through a chain of handlers.
+## 1) Intent
+Pass a request through handlers until one handles it or chain ends.
 
-## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+## 2) Problem it solves
+Single handler classes become bloated with many conditional branches.
 
-## Example (C#)
-See `Example.cs` in this folder for a runnable, minimal implementation.
+## 3) Core idea
+Split logic into handlers linked as a chain.
 
-## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+## 4) Participants in this example
+IExpenseApprover, TeamLead, Manager, Director
+
+## 5) Step-by-step flow
+- Define a shared handler contract.
+- Each handler decides handle-or-forward.
+- Link handlers in desired order.
+- Send request to first handler only.
+
+## 6) Benefits
+- Better separation of concerns and cleaner code boundaries.
+- Easier testing because behavior is isolated into smaller units.
+- Safer change management as features evolve.
+
+## 7) Trade-offs
+- More classes/interfaces than a quick inline implementation.
+- Slightly higher upfront design effort.
+- Requires team discipline to keep abstractions meaningful.
+
+## 8) How to read the code
+1. Start with `Example.Run()` to see the scenario entry point.
+2. Inspect interfaces and concrete classes used by the pattern.
+3. Follow object interactions in execution order.
+4. Change one implementation and re-run to observe impact.
+
+## 9) Example file
+See `Example.cs` in this folder for a runnable, educational implementation.
