@@ -1,11 +1,11 @@
 # 🎯 Design Patterns in C#
 
-A complete, documentation-first learning repository for common **C# design patterns**.
+A documentation-first repository for learning and practicing **C# design patterns**.
 
 ## What you get
-- 24 pattern folders with concise documentation.
-- A minimal `Example.cs` for each pattern.
-- Catalog index to quickly navigate all patterns.
+- 24 pattern folders with focused explanations.
+- A runnable `Example.cs` implementation in each folder.
+- A catalog to quickly navigate by category and pattern intent.
 
 ## Repository Structure
 
@@ -16,6 +16,9 @@ DesignPatternsInCSharp/
 ├── Structural/
 ├── docs/
 │   └── PATTERNS.md
+├── src/
+│   ├── DesignPatternsInCSharp.csproj
+│   └── Program.cs
 └── tests/
     └── PatternSmokeTests.md
 ```
@@ -32,14 +35,18 @@ Singleton, Builder, Prototype, Factory Method, Abstract Factory.
 Facade, Decorator, Composite, Adapter, Flyweight, Proxy, Bridge.
 
 ## Quick Start
-1. Open `DesignPatternsInCSharp/docs/PATTERNS.md`.
-2. Pick a pattern folder.
-3. Read pattern intent in `README.md` and inspect `Example.cs`.
+1. Open `DesignPatternsInCSharp/docs/PATTERNS.md` and pick a pattern.
+2. Read that folder's `README.md` using the numbered sections (Intent → Problem → Core Idea → Flow).
+3. Inspect `Example.cs` and run the consolidated sample runner:
+
+```bash
+dotnet run --project DesignPatternsInCSharp/src/DesignPatternsInCSharp.csproj
+```
 
 ## Contributing
-- Improve examples with richer domain scenarios.
-- Add unit test projects per pattern/category.
-- Expand “When to use” sections with trade-offs.
+- Keep examples educational and readable (multiline style preferred).
+- Add scenario-specific tests when introducing behavior changes.
+- Document trade-offs, not only benefits, in pattern READMEs.
 
 ## License
 MIT
