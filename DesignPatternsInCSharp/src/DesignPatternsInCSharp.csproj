@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Behavioral\**\Example.cs" />
+    <Compile Include="..\Creational\**\Example.cs" />
+    <Compile Include="..\Structural\**\Example.cs" />
+  </ItemGroup>
+</Project>
