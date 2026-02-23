@@ -4,14 +4,14 @@
 Convert one interface to another expected by clients.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- You must integrate legacy/third-party APIs with incompatible interfaces.
+- You want to keep client code unchanged while swapping providers.
+- You need a translation layer for request/response models.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Wrapping external payment SDKs.
+- Legacy logging API migration.
+- Bridging old/new service contracts.

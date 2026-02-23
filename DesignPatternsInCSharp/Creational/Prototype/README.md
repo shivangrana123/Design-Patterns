@@ -4,14 +4,14 @@
 Clone existing instances efficiently.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Creating objects from scratch is expensive.
+- You need many similar objects with small variations.
+- You want to hide concrete class construction from clients.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Copying document templates.
+- Spawning game entities from base stats.
+- Cloning workflow definitions.

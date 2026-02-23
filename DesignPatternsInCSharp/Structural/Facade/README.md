@@ -1,17 +1,17 @@
 # Facade Pattern
 
 ## Intent
-Expose a simple API over complex subsystems.
+Provide a simplified API over a complex subsystem.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- A subsystem is complex and clients need a simpler entry point.
+- You want to reduce coupling to many low-level types.
+- You need a stable API while subsystem internals evolve.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Checkout orchestration over payment/inventory/shipping.
+- Media pipeline wrapper services.
+- Third-party SDK simplification layer.
