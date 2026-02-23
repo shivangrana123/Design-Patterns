@@ -4,14 +4,14 @@
 Build complex objects step-by-step.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Objects require many optional parameters or construction steps.
+- You want readable construction with validation before `Build()`.
+- Construction logic should be separated from representation.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Creating HTTP requests with optional headers/body.
+- Building complex domain aggregates.
+- Generating reports with configurable sections.

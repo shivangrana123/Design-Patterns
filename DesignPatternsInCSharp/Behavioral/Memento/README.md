@@ -4,14 +4,14 @@
 Capture and restore object state safely.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- You need undo/checkpoint behavior without exposing internals.
+- State snapshots should be stored and restored later.
+- You want immutable history records.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Text editor undo stacks.
+- Game save checkpoints.
+- Configuration rollback in admin tools.

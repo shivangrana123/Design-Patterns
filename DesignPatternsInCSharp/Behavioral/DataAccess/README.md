@@ -4,14 +4,14 @@
 Abstract persistence concerns behind repositories/UoW.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Domain logic should not depend on SQL/ORM details.
+- You want a seam for tests with in-memory fakes.
+- Multiple persistence implementations may be swapped later.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Repository per aggregate root.
+- Unit of Work transactions for multiple writes.
+- CQRS query/read model separation.

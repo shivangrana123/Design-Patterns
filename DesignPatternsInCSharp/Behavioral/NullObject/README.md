@@ -4,14 +4,14 @@
 Use a neutral object to avoid repeated null checks.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- A dependency can be optional but call sites should remain simple.
+- You want deterministic default behavior instead of `null` handling everywhere.
+- You want to apply polymorphism even when no-op behavior is needed.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Guest user profile in authentication flows.
+- No-op logger in tests or local runs.
+- Fallback notification sender.

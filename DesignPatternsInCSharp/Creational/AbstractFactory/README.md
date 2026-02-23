@@ -4,14 +4,14 @@
 Create related object families without concrete coupling.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Multiple related products must be created together consistently.
+- You need to switch whole families (e.g., themes/providers).
+- Client code should remain independent of concrete implementations.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Cross-platform UI widget families.
+- Database providers with matching commands/connections.
+- Cloud provider specific SDK wrappers.

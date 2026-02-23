@@ -1,17 +1,17 @@
 # Bridge Pattern
 
 ## Intent
-Separate abstraction from implementation.
+Decouple abstraction from implementation so both can vary.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Both abstraction and implementation axes evolve independently.
+- You want to avoid combinatorial subclass growth.
+- Implementation should be swappable at runtime.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Notification types × delivery channels.
+- Remote controls × device types.
+- Document types × rendering backends.

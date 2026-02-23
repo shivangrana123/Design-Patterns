@@ -4,14 +4,14 @@
 Add new operations over object structures without changing classes.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Object structure is stable but operations change frequently.
+- You need type-safe double dispatch across element variants.
+- You want to keep operations separate from data structures.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- AST analysis and code generation.
+- Report/export generation over domain graphs.
+- Pricing engines over product hierarchies.

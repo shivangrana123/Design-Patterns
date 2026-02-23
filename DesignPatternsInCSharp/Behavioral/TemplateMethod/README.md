@@ -4,14 +4,14 @@
 Define algorithm skeleton and override specific steps.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Process steps are stable but some steps vary by subtype.
+- You want a common flow while preventing step reordering.
+- You need to reuse invariant setup/cleanup logic.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- File importers for CSV/JSON/XML.
+- Batch processing job templates.
+- Test fixture setup pipelines.

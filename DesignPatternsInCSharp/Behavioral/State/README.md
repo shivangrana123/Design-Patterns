@@ -4,14 +4,14 @@
 Change behavior when internal state changes.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- Object behavior depends heavily on lifecycle state.
+- You want to avoid giant conditionals that check state repeatedly.
+- Transitions between states must be explicit and controlled.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Order processing lifecycle.
+- Document workflow (draft/review/published).
+- Connection state in networking clients.

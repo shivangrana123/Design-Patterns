@@ -4,14 +4,14 @@
 Guarantee one instance with global access point.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- There must be exactly one shared instance (e.g., process-wide config).
+- You need lazy or centralized access with controlled construction.
+- You can tolerate global state trade-offs and test constraints.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Application configuration registry.
+- In-process cache coordinator.
+- Feature flag provider bootstrap.

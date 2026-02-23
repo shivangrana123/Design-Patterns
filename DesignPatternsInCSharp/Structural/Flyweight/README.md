@@ -1,17 +1,17 @@
 # Flyweight Pattern
 
 ## Intent
-Share intrinsic state to reduce memory usage.
+Share intrinsic state to support many fine-grained objects.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- You have huge numbers of similar objects causing memory pressure.
+- Large immutable state can be shared across instances.
+- Extrinsic state can be supplied from context at runtime.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Text editor glyph caching.
+- Map marker/icon reuse.
+- Game particle type sharing.

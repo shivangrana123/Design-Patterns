@@ -1,17 +1,17 @@
 # Composite Pattern
 
 ## Intent
-Treat leaves and groups uniformly.
+Treat part-whole hierarchies uniformly.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- You work with tree structures containing leaves and groups.
+- Clients should perform operations on single and grouped objects uniformly.
+- You need recursive traversal and aggregation behavior.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- File system directories/files.
+- Organization charts.
+- UI component trees.

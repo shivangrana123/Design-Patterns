@@ -1,17 +1,17 @@
 # Decorator Pattern
 
 ## Intent
-Attach responsibilities dynamically at runtime.
+Attach responsibilities to objects dynamically.
 
 ## When to use
-- You need clear separation of concerns.
-- You want easier unit testing through abstractions.
-- You expect this behavior to evolve independently.
+- You need optional features layered at runtime.
+- Subclass explosion would occur for all feature combinations.
+- You want to follow open/closed principle for behavior extension.
 
 ## Example (C#)
 See `Example.cs` in this folder for a runnable, minimal implementation.
 
 ## Real-world use cases
-- Enterprise application modules.
-- API orchestration and workflows.
-- Domain services with evolving requirements.
+- Middleware-style request processing.
+- Adding caching/retry/logging around services.
+- UI component enhancement (borders, scrollbars).
