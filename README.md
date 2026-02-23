@@ -32,14 +32,9 @@ Singleton, Builder, Prototype, Factory Method, Abstract Factory.
 Facade, Decorator, Composite, Adapter, Flyweight, Proxy, Bridge.
 
 ## Quick Start
-1. Open `DesignPatternsInCSharp/docs/PATTERNS.md` and pick a pattern.
-2. Read that folder's `README.md` for intent, usage guidance, and real-world examples.
-3. Inspect `Example.cs` for the runnable implementation.
-4. Run all pattern samples together:
-
-```bash
-dotnet run --project DesignPatternsInCSharp/src/DesignPatternsInCSharp.csproj
-```
+1. Open `DesignPatternsInCSharp/docs/PATTERNS.md`.
+2. Pick a pattern folder.
+3. Read pattern intent in `README.md` and inspect `Example.cs`.
 
 ## Contributing
 - Improve examples with richer domain scenarios.
